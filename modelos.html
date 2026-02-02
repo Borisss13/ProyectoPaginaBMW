@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos BMW - Gama Completa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botón hamburguesa para abrir menú -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+    </button>
+
+    <!-- Menú lateral (igual en todas las páginas) -->
+    <nav class="side-menu" id="sideMenu">
+        <button class="close-btn" id="closeBtn" aria-label="Cerrar menú">
+            ✕
+        </button>
+        
+        <div class="menu-logo">
+            <h2>BMW</h2>
+        </div>
+
+        <ul class="menu-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modelos.html" class="active">Modelos</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="iconicos.html">Modelos Icónicos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Encabezado de la página -->
+        <section class="page-header">
+            <h1>Gama de Modelos BMW</h1>
+            <p>Descubre la perfecta combinación de lujo, tecnología y rendimiento</p>
+        </section>
+
+        <!-- Grid de modelos actuales -->
+        <section class="models-section">
+            <h2>Modelos Actuales</h2>
+            
+            <!-- Contenedor Grid para las tarjetas de modelos -->
+            <div class="models-grid">
+                <!-- Modelo 1: Serie 3 -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+                            <span class="model-name-overlay">Serie 3</span>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>BMW Serie 3</h3>
+                        <p class="model-description">El sedán deportivo por excelencia. Equilibrio perfecto entre confort y dinámica.</p>
+                        <ul class="model-specs">
+                            <li><strong>Motor:</strong> 2.0L Turbo - 255 CV</li>
+                            <li><strong>0-100 km/h:</strong> 5.9 segundos</li>
+                            <li><strong>Consumo:</strong> 6.2 L/100km</li>
+                            <li><strong>Precio desde:</strong> 45.000€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modelo 2: Serie 5 -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #d8c600 0%, #d8c600 0%);">
+                            <span class="model-name-overlay">Serie 5</span>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>BMW Serie 5</h3>
+                        <p class="model-description">Lujo ejecutivo con tecnología de conducción autónoma nivel 2.</p>
+                        <ul class="model-specs">
+                            <li><strong>Motor:</strong> 3.0L Turbo - 340 CV</li>
+                            <li><strong>0-100 km/h:</strong> 5.1 segundos</li>
+                            <li><strong>Consumo:</strong> 7.1 L/100km</li>
+                            <li><strong>Precio desde:</strong> 62.000€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modelo 3: X5 -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);">
+                            <span class="model-name-overlay">X5</span>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>BMW X5</h3>
+                        <p class="model-description">SUV premium con capacidad todoterreno y espacio para toda la familia.</p>
+                        <ul class="model-specs">
+                            <li><strong>Motor:</strong> 3.0L Diesel - 286 CV</li>
+                            <li><strong>0-100 km/h:</strong> 6.5 segundos</li>
+                            <li><strong>Consumo:</strong> 6.8 L/100km</li>
+                            <li><strong>Precio desde:</strong> 75.000€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modelo 4: M3 -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #00d856 0%, #0077B6 100%);">
+                            <span class="model-name-overlay">i4</span>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>BMW M3 Competition</h3>
+                        <p class="model-description">El sedán deportivo definitivo. Pura adrenalina con 510 CV de potencia.</p>
+                        <ul class="model-specs">
+                            <li><strong>Motor:</strong> 3.0L Twin-Turbo - 510 CV</li>
+                            <li><strong>0-100 km/h:</strong> 3.9 segundos</li>
+                            <li><strong>Consumo:</strong> 10.2 L/100km</li>
+                            <li><strong>Precio desde:</strong> 95.000€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modelo 5: i4 -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);">
+                            <span class="model-name-overlay">i4</span>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>BMW i4 eDrive40</h3>
+                        <p class="model-description">Sedán eléctrico con hasta 590 km de autonomía. El futuro es ahora.</p>
+                        <ul class="model-specs">
+                            <li><strong>Motor:</strong> Eléctrico - 340 CV</li>
+                            <li><strong>0-100 km/h:</strong> 5.7 segundos</li>
+                            <li><strong>Autonomía:</strong> 590 km</li>
+                            <li><strong>Precio desde:</strong> 60.000€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modelo 6: iX -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);">
+                            <span class="model-name-overlay">iX</span>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>BMW iX xDrive50</h3>
+                        <p class="model-description">SUV eléctrico de lujo con tecnología de conducción autónoma avanzada.</p>
+                        <ul class="model-specs">
+                            <li><strong>Motor:</strong> Dual Eléctrico - 523 CV</li>
+                            <li><strong>0-100 km/h:</strong> 4.6 segundos</li>
+                            <li><strong>Autonomía:</strong> 630 km</li>
+                            <li><strong>Precio desde:</strong> 105.000€</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

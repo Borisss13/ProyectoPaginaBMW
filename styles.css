@@ -1,0 +1,496 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: none; /* oculto en escritorio */
+}
+
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    background: linear-gradient(180deg, #1a1a1a, #2d2d2d);
+    padding: 40px 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-logo {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0066cc;
+}
+
+.menu-logo h2 {
+    color: white;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.menu-links {
+    list-style: none;
+}
+
+.menu-links li {
+    margin-bottom: 15px;
+}
+
+.menu-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.menu-links a:hover {
+    background-color: rgba(0, 102, 204, 0.2);
+    color: white;
+}
+
+.menu-links a.active {
+    background-color: #0066cc;
+    color: white;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 280px;
+    min-height: 100vh;
+}
+
+section {
+    padding: 60px 40px;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #0066cc, #003d7a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Grid para características, modelos, etc */
+.features-grid,
+.models-grid,
+.timeline-grid,
+.milestones-grid,
+.iconic-grid {
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.models-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.timeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.milestones-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.iconic-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Tarjetas generales */
+.feature-card,
+.model-card,
+.timeline-card,
+.milestone-card,
+.iconic-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover,
+.model-card:hover,
+.timeline-card:hover,
+.iconic-card:hover {
+    transform: translateY(-5px);
+}
+
+.milestone-card {
+    background: linear-gradient(135deg, #0066cc, #004a99);
+    color: white;
+    text-align: center;
+}
+
+.feature-icon,
+.milestone-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3,
+.model-info h3,
+.timeline-card h3,
+.milestone-card h3,
+.iconic-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.milestone-card h3 {
+    color: white;
+}
+
+/* Modelo específico */
+.model-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.model-image {
+    width: 100%;
+    height: 200px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-name-overlay {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.model-info {
+    padding: 25px;
+}
+
+.model-specs {
+    list-style: none;
+    padding: 0;
+}
+
+.model-specs li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.model-specs strong {
+    color: #0066cc;
+}
+
+/* Timeline */
+.timeline-year {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Icónicos */
+.iconic-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.iconic-image {
+    width: 100%;
+    height: 250px;
+}
+
+.iconic-info {
+    padding: 30px;
+}
+
+.iconic-details {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.detail-badge {
+    background-color: #f0f0f0;
+    color: #0066cc;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+/* Page header */
+.page-header {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* Quote */
+.quote-section {
+    background-color: #0066cc;
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.quote-section blockquote {
+    font-size: 24px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-section cite {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 35px;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-3px);
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    .side-menu {
+        width: 240px;
+    }
+    
+    .main-content {
+        margin-left: 240px;
+    }
+    
+    .features-grid,
+    .models-grid,
+    .timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .milestones-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet/móvil */
+@media (max-width: 768px) {
+    .side-menu {
+        transform: translateX(-100%);
+    }
+    
+    .side-menu.menu-open {
+        transform: translateX(0);
+    }
+    
+    .menu-toggle,
+    .close-btn {
+        display: block;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    section {
+        padding: 40px 20px;
+    }
+    
+    .features-grid,
+    .models-grid,
+    .timeline-grid,
+    .iconic-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .milestones-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-content h1 {
+        font-size: 50px;
+    }
+    
+    section h2 {
+        font-size: 30px;
+    }
+}
+
+/* Móvil pequeño */
+@media (max-width: 480px) {
+    .side-menu {
+        width: 85%;
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .tagline {
+        font-size: 18px;
+    }
+    
+    section h2 {
+        font-size: 24px;
+    }
+    
+    .milestones-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+}

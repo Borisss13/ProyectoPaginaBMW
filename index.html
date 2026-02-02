@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - La Máquina de Conducir Definitiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botón hamburguesa para abrir menú en móvil/tablet -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+    </button>
+
+    <!-- Menú lateral izquierdo -->
+    <nav class="side-menu" id="sideMenu">
+        <!-- Botón de cierre del menú -->
+        <button class="close-btn" id="closeBtn" aria-label="Cerrar menú">
+            ✕
+        </button>
+        
+        <!-- Logo BMW en el menú -->
+        <div class="menu-logo">
+            <h2>BMW</h2>
+        </div>
+
+        <!-- Enlaces de navegación -->
+        <ul class="menu-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="iconicos.html">Modelos Icónicos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main class="main-content">
+        <!-- Sección hero (portada principal) -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>BMW</h1>
+                <p class="tagline">The Ultimate Driving Machine</p>
+                <p class="subtitle">Innovación, Rendimiento y Diseño desde 1916</p>
+                <a href="modelos.html" class="cta-button">Descubre Nuestros Modelos</a>
+            </div>
+        </section>
+
+        <!-- Sección de características principales usando Grid -->
+        <section class="features">
+            <h2>¿Por qué BMW?</h2>
+            
+            <!-- Contenedor Grid para las tarjetas de características -->
+            <div class="features-grid">
+                <!-- Tarjeta 1: Innovación -->
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Innovación Tecnológica</h3>
+                    <p>Tecnología de vanguardia en cada vehículo. Desde sistemas de conducción autónoma hasta motores eléctricos de última generación.</p>
+                </div>
+
+                <!-- Tarjeta 2: Rendimiento -->
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rendimiento Superior</h3>
+                    <p>Más de un siglo perfeccionando el arte de la conducción deportiva y el placer al volante.</p>
+                </div>
+
+                <!-- Tarjeta 3: Diseño -->
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Diseño Atemporal</h3>
+                    <p>Líneas elegantes y agresivas que definen el lujo deportivo moderno desde hace décadas.</p>
+                </div>
+
+                <!-- Tarjeta 4: Sostenibilidad -->
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Movilidad Sostenible</h3>
+                    <p>Liderando la transición hacia la electromovilidad con la gama BMW i y tecnología híbrida.</p>
+                </div>
+
+                <!-- Tarjeta 5: Lujo -->
+                <div class="feature-card">
+                    <div class="feature-icon">👑</div>
+                    <h3>Lujo Premium</h3>
+                    <p>Materiales de primera calidad y acabados artesanales en cada detalle del interior.</p>
+                </div>
+
+                <!-- Tarjeta 6: Deportividad -->
+                <div class="feature-card">
+                    <div class="feature-icon">🏁</div>
+                    <h3>Espíritu Deportivo</h3>
+                    <p>Herencia en competición con BMW M, la división de alto rendimiento más respetada del mundo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de llamada a la acción -->
+        <section class="cta-section">
+            <h2>Experimenta la Emoción de Conducir</h2>
+            <p>Descubre por qué BMW sigue siendo el referente del lujo deportivo</p>
+            <div class="cta-buttons">
+                <a href="modelos.html" class="btn-primary">Ver Modelos</a>
+                <a href="historia.html" class="btn-secondary">Nuestra Historia</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script JavaScript para el menú responsive -->
+    <script src="script.js"></script>
+</body>
+</html>
